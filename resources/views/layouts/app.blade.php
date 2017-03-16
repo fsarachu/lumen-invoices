@@ -10,7 +10,25 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    @yield('content')
+
+<div id="sidebar-menu" class="ui left vertical red inverted menu sidebar">
+    <div class="header item">Comprobantes</div>
+    <a class="active item">Cargar</a>
+    <a class="item">Listar</a>
+</div>
+
+<div class="ui top fixed red borderless inverted massive main menu">
+    <div id="sidebar-toggle" class="item">
+        <i class="content icon"></i>
+    </div>
+    <div class="brand item">comprobantes</div>
+</div>
+
+<div class="pusher">
+    <div class="ui main container">
+        @yield('content')
+    </div>
+</div>
 <script src="/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+#sidebar-toggle {
+    position: absolute;
+    z-index: 1000;
+}
+
+.fixed.menu .brand.item {
+    flex-grow: 1;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main.container {
+    padding-top: 3.673em;
+}
