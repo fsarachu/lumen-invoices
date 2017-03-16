@@ -2,3 +2,11 @@
      User Global Variables
 *******************************/
 @fontPath: "../fonts";
+
+@primaryColor: @red;
+@secondaryColor: @blue;
+@red: #ff5456;
+@yellow: #ffe254;
+@green: #6ddbba;
+@blue: #5bc0eb;
+@violet: #da83b9;
