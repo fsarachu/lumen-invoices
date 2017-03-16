@@ -1,0 +1,22 @@
+{
+  "name": "lumen-invoices",
+  "version": "1.0.0",
+  "description": "App for uploading invoices",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsarachu/lumen-invoices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsarachu/lumen-invoices/issues"
+  },
+  "homepage": "https://github.com/fsarachu/lumen-invoices#readme"
+}
