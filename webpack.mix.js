@@ -12,4 +12,5 @@ const {mix} = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-    .styles(['resources/assets/semantic/dist/semantic.css'], 'public/css/app.css');
+    .styles(['resources/assets/semantic/dist/semantic.css'], 'public/css/app.css')
+    .copy('node_modules/semantic-ui/src/themes/default/assets/fonts', 'public/fonts');
