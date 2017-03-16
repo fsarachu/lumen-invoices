@@ -1,4 +1,6 @@
 const {mix} = require('laravel-mix');
+const path = require('path');
+const webpack = require('webpack');
 
 /*
  |--------------------------------------------------------------------------
@@ -10,6 +12,20 @@ const {mix} = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            jquery: path.resolve(__dirname, 'node_modules/jquery/src/jquery.js')
+        }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
+    ]
+});
 
 mix.js('resources/assets/js/app.js', 'public/js')
     .styles(['resources/assets/semantic/dist/semantic.css'], 'public/css/app.css')
