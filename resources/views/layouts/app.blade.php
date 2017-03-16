@@ -1,10 +1,12 @@
 <html>
-    <head>
-        <title>App Name - @yield('title')</title>
-    </head>
-    <body>
-        <div class="container">
-            @yield('content')
-        </div>
-    </body>
+<head>
+    <title>App Name - @yield('title')</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="container">
+    @yield('content')
+</div>
+<script src="/js/app.js"></script>
+</body>
 </html>
