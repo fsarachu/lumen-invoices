@@ -2,12 +2,16 @@
   "name": "lumen-invoices",
   "version": "1.0.0",
   "description": "App for uploading invoices",
-  "main": "index.js",
+  "private": true,
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/fsarachu/lumen-invoices/issues"
   },
-  "homepage": "https://github.com/fsarachu/lumen-invoices#readme"
+  "homepage": "https://github.com/fsarachu/lumen-invoices#readme",
+  "devDependencies": {
+    "laravel-mix": "^0.8.8"
+  }
 }
