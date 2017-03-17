@@ -27,6 +27,6 @@
 <div class="pusher">
     @yield('content')
 </div>
-<script src="/js/app.js"></script>
+<script async src="/js/app.js"></script>
 </body>
 </html>
