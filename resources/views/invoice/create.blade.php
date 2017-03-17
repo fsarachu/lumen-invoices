@@ -73,6 +73,43 @@
                     </div>
                 </div>
             </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Método de pago</label>
+                    <div class="ui dropdown search selection">
+                        <input type="hidden" name="payment_method">
+                        <div class="default text">Seleccionar método</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="1">Efectivo (Moneda Local),</div>
+                            <div class="item" data-value="2">Efectivo (U$S),</div>
+                            <div class="item" data-value="3">Tarjeta de crédito MD,</div>
+                            <div class="item" data-value="4">Tarjeta de crédito MD LUPS,</div>
+                            <div class="item" data-value="5">Tarjeta de débito ITAU</div>
+                            <div class="item" data-value="6">Banco BROU</div>
+                            <div class="item" data-value="7">Banco ITAU</div>
+                            <div class="item" data-value="8">Paypal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Moneda</label>
+                    <div class="ui dropdown search selection">
+                        <input type="hidden" name="currency">
+                        <div class="default text">Seleccionar moneda</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="1"><i class="us flag"></i>Dólares (USD)</div>
+                            <div class="item" data-value="2"><i class="uy flag"></i>Pesos Uruguayos (UYU)</div>
+                            <div class="item" data-value="3"><i class="ar flag"></i>Pesos Argentinos (ARS)</div>
+                            <div class="item" data-value="4"><i class="br flag"></i>Reales (BRC)</div>
+                            <div class="item" data-value="5"><i class="mx flag"></i>Pesos Mexicanos (MXN)</div>
+                            <div class="item" data-value="6"><i class="py flag"></i>Guaraníes (PYG)</div>
+                            <div class="item" data-value="7"><i class="pe flag"></i>Soles (PEN)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="field">
                 <label for="picture">Imagen</label>
                 <input id="picture" name="picture" type="file">
