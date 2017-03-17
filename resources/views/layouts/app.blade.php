@@ -13,7 +13,7 @@
 
 <div id="sidebar-menu" class="ui left vertical red inverted menu sidebar">
     <div class="header item">Comprobantes</div>
-    <a class="active item">Cargar</a>
+    <a class="item" href="{{route('new.invoice')}}">Cargar</a>
     <a class="item">Listar</a>
 </div>
 
