@@ -19,7 +19,7 @@
 
 <div class="ui top fixed red borderless inverted massive main menu">
     <div id="sidebar-toggle" class="item">
-        <i class="content icon"></i>
+        <i class="sidebar icon"></i>
     </div>
     <div class="brand item"><span>rimbos_admin</span></div>
 </div>
