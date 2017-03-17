@@ -25,9 +25,7 @@
 </div>
 
 <div class="pusher">
-    <div class="ui main container">
-        @yield('content')
-    </div>
+    @yield('content')
 </div>
 <script src="/js/app.js"></script>
 </body>
