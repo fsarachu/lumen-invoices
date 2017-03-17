@@ -8,12 +8,12 @@
             <h3 class="ui horizontal divider header">Cargar Comprobante</h3>
             <div class="three fields">
                 <div class="field">
-                    <label>Fecha</label>
-                    <input placeholder="Seleccionar fecha" type="text">
+                    <label for="date">Fecha</label>
+                    <input id="date" name="date" placeholder="Seleccionar fecha" type="text">
                 </div>
                 <div class="field">
-                    <label>Viaje</label>
-                    <input placeholder="Identificador de viaje" type="text">
+                    <label for="trip">Viaje</label>
+                    <input id="trip" name="trip" placeholder="Identificador de viaje" type="text">
                 </div>
                 <div class="field">
                     <label>País</label>
@@ -50,11 +50,11 @@
             <div class="three fields">
                 <div class="field">
                     <label for="business_name">Empresa</label>
-                    <input type="text" placeholder="Nombre de empresa" name="business_name" id="business_name">
+                    <input id="business_name" name="business_name" placeholder="Nombre de empresa" type="text">
                 </div>
                 <div class="field">
                     <label for="invoice_number">Nro recibo</label>
-                    <input type="text" placeholder="Número del recibo" name="invoice_number" id="invoice_number">
+                    <input id="invoice_number" name="invoice_number" placeholder="Número del recibo" type="text">
                 </div>
                 <div class="field">
                     <label>Categoría</label>
@@ -74,30 +74,30 @@
                 </div>
             </div>
             <div class="field">
-                <label>Descripción</label>
-                <textarea rows="3"></textarea>
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" rows="3"></textarea>
             </div>
             <div class="grouped fields">
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="include_rut">
+                        <input id="include_rut" name="include_rut" value="true" type="checkbox">
                         <label for="include_rut">Incluye RUT empresa</label>
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="assign_anii">
+                        <input id="assign_anii" name="assign_anii" value="true" type="checkbox">
                         <label for="assign_anii">Asignar a ANII</label>
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="personal_spending">
+                        <input id="personal_spending" name="personal_spending" value="true" type="checkbox">
                         <label for="personal_spending">Gasto Personal</label>
                     </div>
                 </div>
             </div>
-            <input type="submit" class="ui secondary submit large fluid button" value="Cargar">
+            <input class="ui secondary submit large fluid button" value="Cargar" type="submit">
         </form>
     </div>
 @endsection
