@@ -2,6 +2,7 @@
      User Global Variables
 *******************************/
 @fontPath: "../fonts";
+@imagePath: "../images";
 
 @primaryColor: @red;
 @secondaryColor: @blue;
