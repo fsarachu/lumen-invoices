@@ -16,6 +16,6 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('invoices/new', [
-    'as' => 'createInvoice',
+    'as' => 'new.invoice',
     'uses' => 'InvoiceController@create'
 ]);
