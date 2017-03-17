@@ -47,6 +47,36 @@
                     </div>
                 </div>
             </div>
+            <div class="three fields">
+                <div class="field">
+                    <label for="business_name">Empresa</label>
+                    <input type="text" placeholder="Nombre de empresa" name="business_name" id="business_name">
+                </div>
+                <div class="field">
+                    <label for="invoice_number">Nro recibo</label>
+                    <input type="text" placeholder="Número del recibo" name="invoice_number" id="invoice_number">
+                </div>
+                <div class="field">
+                    <label>Categoría</label>
+                    <div class="ui dropdown search selection">
+                        <input type="hidden" name="category">
+                        <div class="default text">Seleccionar categoría</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item" data-value="1">Transporte</div>
+                            <div class="item" data-value="2">Alimentos</div>
+                            <div class="item" data-value="3">Alojamiento</div>
+                            <div class="item" data-value="4">Servicios</div>
+                            <div class="item" data-value="5">Promoción</div>
+                            <div class="item" data-value="6">Otros</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Descripción</label>
+                <textarea rows="3"></textarea>
+            </div>
             <input type="submit" class="ui secondary submit large fluid button" value="Cargar">
         </form>
     </div>
