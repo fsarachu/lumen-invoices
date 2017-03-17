@@ -110,6 +110,23 @@
                     </div>
                 </div>
             </div>
+
+            <div class="three fields">
+                <div class="field">
+                    <label for="amount_in_original_currency">Importe en moneda de origen</label>
+                    <input id="amount_in_original_currency" name="amount_in_original_currency" type="number"
+                           step="0.01" value="0.00">
+                </div>
+                <div class="field">
+                    <label for="dollar_quotation">Cotización a dólares</label>
+                    <input id="dollar_quotation" name="dollar_quotation" type="number" step="0.01" value="0.00">
+                </div>
+                <div class="field">
+                    <label for="amount_in_dollars">Importe en dólares</label>
+                    <input id="amount_in_dollars" name="amount_in_dollars" type="number" step="0.01" readonly=""
+                           value="0.00">
+                </div>
+            </div>
             <div class="field">
                 <label for="picture">Imagen</label>
                 <input id="picture" name="picture" type="file">
