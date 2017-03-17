@@ -15,4 +15,7 @@ $app->get('/', function () use ($app) {
     return view('hello');
 });
 
-$app->get('invoices/new', 'InvoiceController@create');
+$app->get('invoices/new', [
+    'as' => 'createInvoice',
+    'uses' => 'InvoiceController@create'
+]);
