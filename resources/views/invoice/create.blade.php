@@ -126,7 +126,7 @@
                     <input id="dollar_quotation" name="dollar_quotation" type="text" inputmode="number"
                            pattern="^[-+]?\d*(\.\d+)?$" placeholder="0.00">
                 </div>
-                <div class="field">
+                <div class="disabled field">
                     <label for="amount_in_dollars">Importe en dólares</label>
                     <input id="amount_in_dollars" name="amount_in_dollars" type="text" value="0.00" disabled="">
                 </div>
