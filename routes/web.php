@@ -14,3 +14,5 @@
 $app->get('/', function () use ($app) {
     return view('hello');
 });
+
+$app->get('invoices/new', 'InvoiceController@create');
