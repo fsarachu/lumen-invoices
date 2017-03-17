@@ -76,7 +76,7 @@
             <div class="two fields">
                 <div class="field">
                     <label>Método de pago</label>
-                    <div class="ui dropdown search selection">
+                    <div class="ui dropdown selection">
                         <input type="hidden" name="payment_method">
                         <div class="default text">Seleccionar método</div>
                         <i class="dropdown icon"></i>
