@@ -21,7 +21,7 @@
     <div id="sidebar-toggle" class="item">
         <i class="sidebar icon"></i>
     </div>
-    <div class="brand item"><a href="/">rimbos_admin</a></div>
+    <div class="brand item"><a href="/">· RimbosAdmin ·</a></div>
 </div>
 
 <div class="pusher">

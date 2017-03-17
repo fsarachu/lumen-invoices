@@ -4,9 +4,11 @@
 }
 
 .fixed.menu .brand.item {
-    flex-grow: 1;
-    justify-content: center;
+    display: block;
+    margin: 0;
+    width: 100%;
     font-weight: bold;
+    text-align: center;
 }
 
 .pusher {
