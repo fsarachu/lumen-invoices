@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="ui container">
-        <form class="ui invoice form fluid basic padded segment" novalidate>
+        <form class="ui invoice form fluid basic padded segment" method="post" enctype="multipart/form-data" novalidate>
             <h3 class="ui horizontal divider header">Cargar Comprobante</h3>
             <div class="three fields">
                 <div class="field">
