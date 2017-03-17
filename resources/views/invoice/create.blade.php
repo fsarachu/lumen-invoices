@@ -74,6 +74,10 @@
                 </div>
             </div>
             <div class="field">
+                <label for="picture">Imagen</label>
+                <input id="picture" name="picture" type="file">
+            </div>
+            <div class="field">
                 <label for="description">Descripción</label>
                 <textarea id="description" name="description" rows="3"></textarea>
             </div>
