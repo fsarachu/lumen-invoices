@@ -30,6 +30,7 @@
     "laravel-mix": "^0.8.8"
   },
   "dependencies": {
-    "semantic-ui": "^2.2.9"
+    "semantic-ui": "^2.2.9",
+    "semantic-ui-calendar": "0.0.7"
   }
 }
