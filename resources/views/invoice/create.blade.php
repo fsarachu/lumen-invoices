@@ -9,7 +9,7 @@
             <div class="three fields">
                 <div class="field">
                     <label for="date">Fecha</label>
-                    <input id="date" name="date" placeholder="Seleccionar fecha" type="text">
+                    <input id="date" name="date" placeholder="Seleccionar fecha" type="date">
                 </div>
                 <div class="field">
                     <label for="trip">Viaje</label>
