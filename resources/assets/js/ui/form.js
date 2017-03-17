@@ -16,6 +16,8 @@ let calendarOptions = {
 
 $('#calendar').calendar(calendarOptions).calendar('set date', new Date());
 
+$('#amount_in_original_currency, #dollar_quotation').on('keyup blur change', updateAmountInDollars);
+
 function zeroFill(number, width) {
     width -= number.toString().length;
     if (width > 0) {
@@ -30,4 +32,13 @@ function formatDate(date) {
     var month = date.getMonth() + 1;
     var year = date.getFullYear();
     return year + '-' + zeroFill(month, 2) + '-' + zeroFill(day, 2);
+}
+
+function updateAmountInDollars() {
+    let amountInOriginalCurrency = parseFloat($('#amount_in_original_currency').val()) || 0.0;
+    let dollarQuotation = parseFloat($('#dollar_quotation').val()) || 0.0;
+
+    let amountInDollars = dollarQuotation === 0 ? 0 : amountInOriginalCurrency / dollarQuotation;
+
+    $('#amount_in_dollars').val(amountInDollars.toFixed(2));
 }

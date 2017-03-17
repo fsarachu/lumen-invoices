@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="ui container">
-        <form class="ui invoice form fluid basic padded segment">
+        <form class="ui invoice form fluid basic padded segment" novalidate>
             <h3 class="ui horizontal divider header">Cargar Comprobante</h3>
             <div class="three fields">
                 <div class="field">
@@ -120,13 +120,12 @@
             <div class="three fields">
                 <div class="field">
                     <label for="amount_in_original_currency">Importe en moneda de origen</label>
-                    <input id="amount_in_original_currency" name="amount_in_original_currency" type="text"
-                           inputmode="number" pattern="^[-+]?\d*(\.\d+)?$" placeholder="0.00">
+                    <input id="amount_in_original_currency" name="amount_in_original_currency" type="text" pattern="\d*"
+                           placeholder="0.00">
                 </div>
                 <div class="field">
                     <label for="dollar_quotation">Cotización a dólares</label>
-                    <input id="dollar_quotation" name="dollar_quotation" type="text" inputmode="number"
-                           pattern="^[-+]?\d*(\.\d+)?$" placeholder="0.00">
+                    <input id="dollar_quotation" name="dollar_quotation" type="text" pattern="\d*" placeholder="0.00">
                 </div>
                 <div class="disabled field">
                     <label for="amount_in_dollars">Importe en dólares</label>
