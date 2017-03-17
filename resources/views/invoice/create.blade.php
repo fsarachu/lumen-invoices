@@ -77,6 +77,26 @@
                 <label>Descripción</label>
                 <textarea rows="3"></textarea>
             </div>
+            <div class="grouped fields">
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="include_rut">
+                        <label for="include_rut">Incluye RUT empresa</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="assign_anii">
+                        <label for="assign_anii">Asignar a ANII</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="personal_spending">
+                        <label for="personal_spending">Gasto Personal</label>
+                    </div>
+                </div>
+            </div>
             <input type="submit" class="ui secondary submit large fluid button" value="Cargar">
         </form>
     </div>
