@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div id="sidebar-menu" class="ui left vertical red inverted menu sidebar">
+<div id="sidebar-menu" class="ui left inverted borderless vertical menu sidebar">
     <div class="header item">Comprobantes</div>
     <a class="item" href="{{route('new.invoice')}}">Cargar</a>
     <a class="item">Listar</a>
@@ -21,7 +21,7 @@
     <div id="sidebar-toggle" class="item">
         <i class="content icon"></i>
     </div>
-    <div class="brand item">comprobantes</div>
+    <div class="brand item"><span>rimbos_admin</span></div>
 </div>
 
 <div class="pusher">
