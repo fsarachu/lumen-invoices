@@ -8,8 +8,8 @@
             <h3 class="ui horizontal divider header">Cargar Comprobante</h3>
             <div class="three fields">
                 <div class="field">
+                    <label for="date">Fecha</label>
                     <div class="ui calendar" id="calendar">
-                        <label for="date">Fecha</label>
                         <input id="date" name="date" placeholder="Seleccionar fecha" type="text" readonly="">
                     </div>
                 </div>
