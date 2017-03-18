@@ -8,6 +8,7 @@ use App\Currency;
 use App\Invoice;
 use App\PaymentMethod;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class InvoiceController extends Controller
 {
@@ -65,6 +66,14 @@ class InvoiceController extends Controller
         $invoice->include_rut = $request->has('include_rut') ? true : false;
         $invoice->assign_anii = $request->has('assign_anii') ? true : false;
         $invoice->personal_spending = $request->has('personal_spending') ? true : false;
+
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            $image = $request->file('image');
+            $fileName = md5(uniqid()) . '.' . $image->guessExtension();
+            $image->move(App::basePath() . '/public/uploads', $fileName);
+
+            $invoice->image_url = env('APP_URL') . 'uploads/' . $fileName;
+        }
 
         $invoice->save();
 
