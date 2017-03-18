@@ -81,13 +81,11 @@
                         <div class="default text">Seleccionar moneda</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item" data-value="1"><i class="us flag"></i>Dólares (USD)</div>
-                            <div class="item" data-value="2"><i class="uy flag"></i>Pesos Uruguayos (UYU)</div>
-                            <div class="item" data-value="3"><i class="ar flag"></i>Pesos Argentinos (ARS)</div>
-                            <div class="item" data-value="4"><i class="br flag"></i>Reales (BRC)</div>
-                            <div class="item" data-value="5"><i class="mx flag"></i>Pesos Mexicanos (MXN)</div>
-                            <div class="item" data-value="6"><i class="py flag"></i>Guaraníes (PYG)</div>
-                            <div class="item" data-value="7"><i class="pe flag"></i>Soles (PEN)</div>
+                            @foreach($currencies as $currency)
+                                <div class="item" data-value="{{ $currency->id }}">
+                                    <i class="{{ $currency->iso_2 }} flag"></i>{{ $currency->name }}
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
