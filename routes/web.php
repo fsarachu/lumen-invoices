@@ -21,7 +21,7 @@ $app->get('/invoices/{id:\d+}', 'InvoiceController@show');
 
 $app->get('/invoices/new', 'InvoiceController@create');
 
-$app->post('/invoices/new', 'InvoiceController@store');
+$app->post('/invoices', 'InvoiceController@store');
 
 $app->get('/currencies', function () {
     return DB::table('currencies')->get();
