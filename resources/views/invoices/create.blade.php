@@ -24,27 +24,11 @@
                         <div class="default text">Seleccionar País</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item" data-value="ar"><i class="ar flag"></i>Argentina</div>
-                            <div class="item" data-value="bo"><i class="bo flag"></i>Bolivia</div>
-                            <div class="item" data-value="br"><i class="br flag"></i>Brasil</div>
-                            <div class="item" data-value="cl"><i class="cl flag"></i>Chile</div>
-                            <div class="item" data-value="co"><i class="co flag"></i>Colombia</div>
-                            <div class="item" data-value="cr"><i class="cr flag"></i>Costa Rica</div>
-                            <div class="item" data-value="cu"><i class="cu flag"></i>Cuba</div>
-                            <div class="item" data-value="ec"><i class="ec flag"></i>Ecuador</div>
-                            <div class="item" data-value="sv"><i class="sv flag"></i>El Salvador</div>
-                            <div class="item" data-value="gt"><i class="gt flag"></i>Guatemala</div>
-                            <div class="item" data-value="ht"><i class="ht flag"></i>Haití</div>
-                            <div class="item" data-value="hn"><i class="hn flag"></i>Honduras</div>
-                            <div class="item" data-value="mx"><i class="mx flag"></i>México</div>
-                            <div class="item" data-value="ni"><i class="ni flag"></i>Nicaragua</div>
-                            <div class="item" data-value="pa"><i class="pa flag"></i>Panamá</div>
-                            <div class="item" data-value="py"><i class="py flag"></i>Paraguay</div>
-                            <div class="item" data-value="pe"><i class="pe flag"></i>Perú</div>
-                            <div class="item" data-value="pr"><i class="pr flag"></i>Puerto Rico</div>
-                            <div class="item" data-value="do"><i class="do flag"></i>República Dominicana</div>
-                            <div class="item" data-value="uy"><i class="uy flag"></i>Uruguay</div>
-                            <div class="item" data-value="ve"><i class="ve flag"></i>Venezuela</div>
+                            @foreach($countries as $country)
+                                <div class="item" data-value="{{ $country->iso_2 }}">
+                                    <i class="{{ $country->iso_2 }} flag"></i>{{ $country->name }}
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
