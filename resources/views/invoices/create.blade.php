@@ -53,12 +53,9 @@
                         <div class="default text">Seleccionar categoría</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item" data-value="1">Transporte</div>
-                            <div class="item" data-value="2">Alimentos</div>
-                            <div class="item" data-value="3">Alojamiento</div>
-                            <div class="item" data-value="4">Servicios</div>
-                            <div class="item" data-value="5">Promoción</div>
-                            <div class="item" data-value="6">Otros</div>
+                            @foreach($categories as $category)
+                                <div class="item" data-value="{{$category->id}}">{{$category->name}}</div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
