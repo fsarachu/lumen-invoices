@@ -13,8 +13,8 @@
 
 <div id="sidebar-menu" class="ui left inverted borderless vertical menu sidebar">
     <div class="header item">Comprobantes</div>
-    <a class="item" href="{{route('new.invoice')}}">Cargar</a>
-    <a class="item">Listar</a>
+    <a class="item" href="/invoices/new">Cargar</a>
+    <a class="item" href="/invoices">Listar</a>
 </div>
 
 <div class="ui top fixed red borderless inverted massive main menu">

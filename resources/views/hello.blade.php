@@ -8,10 +8,10 @@
             <h1 class="ui horizontal divider header">Comprobantes</h1>
             <div class="ui two column grid">
                 <div class="column">
-                    <a href="{{route('new.invoice')}}" class="ui primary fluid button">Cargar</a>
+                    <a href="/invoices/new" class="ui primary fluid button">Cargar</a>
                 </div>
                 <div class="column">
-                    <a class="ui secondary fluid button">Listar</a>
+                    <a href="/invoices" class="ui secondary fluid button">Listar</a>
                 </div>
             </div>
         </div>
