@@ -4,20 +4,26 @@ import '../../semantic/src/definitions/modules/checkbox';
 import '../../semantic/src/definitions/modules/popup';
 import '../../../../node_modules/semantic-ui-calendar/src/definitions/modules/calendar'
 
+/* Initialize Form Controls */
 $('.dropdown.selection').dropdown();
 $('.ui.checkbox').checkbox();
 
-let calendarOptions = {
-    type: 'date',
-    formatter: {
-        date: formatDate
-    }
-};
+let $amountInDollars = $('#amount_in_dollars');
+$amountInDollars.val('$' + getAmountInDollars());
+$('#calendar')
+    .calendar({
+        type: 'date',
+        formatter: {
+            date: formatDate
+        }
+    })
+    .calendar('set date', new Date());
 
-$('#calendar').calendar(calendarOptions).calendar('set date', new Date());
+/* Register Event Listeners*/
+$('#amount_in_original_currency, #dollar_quotation')
+    .on('keyup blur change', () => $('#amount_in_dollars').val('$' + getAmountInDollars()));
 
-$('#amount_in_original_currency, #dollar_quotation').on('keyup blur change', updateAmountInDollars);
-
+/* Helper Functions */
 function zeroFill(number, width) {
     width -= number.toString().length;
     if (width > 0) {
@@ -27,18 +33,22 @@ function zeroFill(number, width) {
 }
 
 function formatDate(date) {
-    if (!date) return '';
-    var day = date.getDate();
-    var month = date.getMonth() + 1;
-    var year = date.getFullYear();
+    if (!date) {
+        return '';
+    }
+
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+
     return year + '-' + zeroFill(month, 2) + '-' + zeroFill(day, 2);
 }
 
-function updateAmountInDollars() {
+function getAmountInDollars() {
     let amountInOriginalCurrency = parseFloat($('#amount_in_original_currency').val()) || 0.0;
     let dollarQuotation = parseFloat($('#dollar_quotation').val()) || 0.0;
 
     let amountInDollars = dollarQuotation === 0 ? 0 : amountInOriginalCurrency / dollarQuotation;
 
-    $('#amount_in_dollars').val(amountInDollars.toFixed(2));
+    return amountInDollars.toFixed(2);
 }
