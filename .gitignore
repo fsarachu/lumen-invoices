@@ -5,3 +5,4 @@ Homestead.yaml
 .env
 /node_modules
 /resources/assets/semantic/dist
+/public/uploads/*
