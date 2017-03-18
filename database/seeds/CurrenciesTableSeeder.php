@@ -14,50 +14,50 @@ class CurrenciesTableSeeder extends Seeder
 
         DB::table('currencies')->insert([
             'name' => 'Dólares',
-            '2_letter_code' => 'us',
-            '3_letter_code' => 'USD',
+            'iso_2' => 'us',
+            'iso_3' => 'USD',
             'symbol' => '$'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Pesos Uruguayos',
-            '2_letter_code' => 'uy',
-            '3_letter_code' => 'UYU',
+            'iso_2' => 'uy',
+            'iso_3' => 'UYU',
             'symbol' => '$'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Pesos Argentinos',
-            '2_letter_code' => 'ar',
-            '3_letter_code' => 'ARS',
+            'iso_2' => 'ar',
+            'iso_3' => 'ARS',
             'symbol' => '$'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Reales',
-            '2_letter_code' => 'br',
-            '3_letter_code' => 'BRL',
+            'iso_2' => 'br',
+            'iso_3' => 'BRL',
             'symbol' => 'R$'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Pesos Mexicanos',
-            '2_letter_code' => 'mx',
-            '3_letter_code' => 'MXN',
+            'iso_2' => 'mx',
+            'iso_3' => 'MXN',
             'symbol' => '$'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Guaraníes',
-            '2_letter_code' => 'py',
-            '3_letter_code' => 'PYG',
+            'iso_2' => 'py',
+            'iso_3' => 'PYG',
             'symbol' => '₲'
         ]);
 
         DB::table('currencies')->insert([
             'name' => 'Soles',
-            '2_letter_code' => 'pe',
-            '3_letter_code' => 'PEN',
+            'iso_2' => 'pe',
+            'iso_3' => 'PEN',
             'symbol' => 'S/'
         ]);
 
