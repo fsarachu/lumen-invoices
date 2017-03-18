@@ -19,7 +19,7 @@ class CreateCurrenciesTable extends Migration
             $table->string('2_letter_code');
             $table->string('3_letter_code');
             $table->string('symbol');
-            $table->decimal('last_one_dollar_rate');
+            $table->decimal('last_one_dollar_rate')->nullable()->default(null);
             $table->timestamps();
         });
     }
