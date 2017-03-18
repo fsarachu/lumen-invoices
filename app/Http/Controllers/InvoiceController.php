@@ -49,6 +49,6 @@ class InvoiceController extends Controller
 
         $invoice->save();
 
-        return $invoice;
+        return redirect('/invoices');
     }
 }
