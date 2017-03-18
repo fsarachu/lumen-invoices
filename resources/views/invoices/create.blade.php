@@ -124,8 +124,8 @@
                            placeholder="0.00">
                 </div>
                 <div class="field">
-                    <label for="dollar_quotation">Cotización a dólares</label>
-                    <input id="dollar_quotation" name="dollar_quotation" type="text" pattern="\d*" placeholder="0.00">
+                    <label for="one_dollar_rate">Cotización a dólares</label>
+                    <input id="one_dollar_rate" name="one_dollar_rate" type="text" pattern="\d*" placeholder="0.00">
                 </div>
                 <div class="field">
                     <label for="amount_in_dollars">Importe en dólares</label>

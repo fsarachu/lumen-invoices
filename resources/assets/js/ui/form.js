@@ -20,7 +20,7 @@ $('#calendar')
     .calendar('set date', new Date());
 
 /* Register Event Listeners*/
-$('#amount_in_original_currency, #dollar_quotation')
+$('#amount_in_original_currency, #one_dollar_rate')
     .on('keyup blur change', () => $('#amount_in_dollars').val('$' + getAmountInDollars()));
 
 /* Helper Functions */
@@ -46,7 +46,7 @@ function formatDate(date) {
 
 function getAmountInDollars() {
     let amountInOriginalCurrency = parseFloat($('#amount_in_original_currency').val()) || 0.0;
-    let dollarQuotation = parseFloat($('#dollar_quotation').val()) || 0.0;
+    let dollarQuotation = parseFloat($('#one_dollar_rate').val()) || 0.0;
 
     let amountInDollars = dollarQuotation === 0 ? 0 : amountInOriginalCurrency / dollarQuotation;
 
