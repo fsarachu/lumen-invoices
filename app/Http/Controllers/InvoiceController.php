@@ -11,10 +11,10 @@ class InvoiceController extends Controller
 {
     public function create()
     {
-        $categories = Category::all();
-        $countries = Country::all();
-        $currencies = Currency::all();
-        $payment_methods = PaymentMethod::all();
+        $categories = Category::orderBy('name')->get();
+        $countries = Country::orderBy('name')->get();
+        $currencies = Currency::orderBy('name')->get();
+        $payment_methods = PaymentMethod::orderBy('name')->get();
 
         return view('invoices.create', compact('categories', 'countries', 'currencies', 'payment_methods'));
     }
