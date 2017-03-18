@@ -46,9 +46,9 @@ function formatDate(date) {
 
 function getAmountInDollars() {
     let amountInOriginalCurrency = parseFloat($('#amount_in_original_currency').val()) || 0.0;
-    let dollarQuotation = parseFloat($('#one_dollar_rate').val()) || 0.0;
+    let oneDollarRate = parseFloat($('#one_dollar_rate').val()) || 0.0;
 
-    let amountInDollars = dollarQuotation === 0 ? 0 : amountInOriginalCurrency / dollarQuotation;
+    let amountInDollars = oneDollarRate === 0 ? 0 : amountInOriginalCurrency / oneDollarRate;
 
     return amountInDollars.toFixed(2);
 }
