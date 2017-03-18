@@ -25,7 +25,7 @@
                         <i class="dropdown icon"></i>
                         <div class="menu">
                             @foreach($countries as $country)
-                                <div class="item" data-value="{{ $country->iso_2 }}">
+                                <div class="item" data-value="{{ $country->id }}">
                                     <i class="{{ $country->iso_2 }} flag"></i>{{ $country->name }}
                                 </div>
                             @endforeach
