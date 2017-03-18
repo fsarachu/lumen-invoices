@@ -14,128 +14,128 @@ class CountriesTableSeeder extends Seeder
 
         DB::table('countries')->insert([
             'name' => 'Argentina',
-            '2_letter_code' => 'ar',
-            '3_letter_code' => 'ARG'
+            'iso_2' => 'ar',
+            'iso_3' => 'ARG'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Bolivia',
-            '2_letter_code' => 'bo',
-            '3_letter_code' => 'BOL'
+            'iso_2' => 'bo',
+            'iso_3' => 'BOL'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Brasil',
-            '2_letter_code' => 'br',
-            '3_letter_code' => 'BRA'
+            'iso_2' => 'br',
+            'iso_3' => 'BRA'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Chile',
-            '2_letter_code' => 'cl',
-            '3_letter_code' => 'CHL'
+            'iso_2' => 'cl',
+            'iso_3' => 'CHL'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Colombia',
-            '2_letter_code' => 'co',
-            '3_letter_code' => 'COL'
+            'iso_2' => 'co',
+            'iso_3' => 'COL'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Costa Rica',
-            '2_letter_code' => 'cr',
-            '3_letter_code' => 'CRI'
+            'iso_2' => 'cr',
+            'iso_3' => 'CRI'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Cuba',
-            '2_letter_code' => 'cu',
-            '3_letter_code' => 'CUB'
+            'iso_2' => 'cu',
+            'iso_3' => 'CUB'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Ecuador',
-            '2_letter_code' => 'ec',
-            '3_letter_code' => 'ECU'
+            'iso_2' => 'ec',
+            'iso_3' => 'ECU'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'El Salvador',
-            '2_letter_code' => 'sv',
-            '3_letter_code' => 'SLV'
+            'iso_2' => 'sv',
+            'iso_3' => 'SLV'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Guatemala',
-            '2_letter_code' => 'gt',
-            '3_letter_code' => 'GTM'
+            'iso_2' => 'gt',
+            'iso_3' => 'GTM'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Haití',
-            '2_letter_code' => 'ht',
-            '3_letter_code' => 'HTI'
+            'iso_2' => 'ht',
+            'iso_3' => 'HTI'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Honduras',
-            '2_letter_code' => 'hn',
-            '3_letter_code' => 'HND'
+            'iso_2' => 'hn',
+            'iso_3' => 'HND'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'México',
-            '2_letter_code' => 'mx',
-            '3_letter_code' => 'MEX'
+            'iso_2' => 'mx',
+            'iso_3' => 'MEX'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Nicaragua',
-            '2_letter_code' => 'ni',
-            '3_letter_code' => 'NIC'
+            'iso_2' => 'ni',
+            'iso_3' => 'NIC'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Panamá',
-            '2_letter_code' => 'pa',
-            '3_letter_code' => 'PAN'
+            'iso_2' => 'pa',
+            'iso_3' => 'PAN'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Paraguay',
-            '2_letter_code' => 'py',
-            '3_letter_code' => 'PRY'
+            'iso_2' => 'py',
+            'iso_3' => 'PRY'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Perú',
-            '2_letter_code' => 'pe',
-            '3_letter_code' => 'PER'
+            'iso_2' => 'pe',
+            'iso_3' => 'PER'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Puerto Rico',
-            '2_letter_code' => 'pr',
-            '3_letter_code' => 'PRI'
+            'iso_2' => 'pr',
+            'iso_3' => 'PRI'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'República Dominicana',
-            '2_letter_code' => 'do',
-            '3_letter_code' => 'DOM'
+            'iso_2' => 'do',
+            'iso_3' => 'DOM'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Uruguay',
-            '2_letter_code' => 'uy',
-            '3_letter_code' => 'URY'
+            'iso_2' => 'uy',
+            'iso_3' => 'URY'
         ]);
 
         DB::table('countries')->insert([
             'name' => 'Venezuela',
-            '2_letter_code' => 've',
-            '3_letter_code' => 'VEN'
+            'iso_2' => 've',
+            'iso_3' => 'VEN'
         ]);
 
     }
