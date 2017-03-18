@@ -63,6 +63,7 @@ class InvoiceController extends Controller
         $invoice->currency_id = $request->input('currency');
         $invoice->amount_in_original_currency = $request->input('amount_in_original_currency');
         $invoice->one_dollar_rate = $request->input('one_dollar_rate');
+        $invoice->amount_in_dollars = $invoice->amount_in_original_currency / $invoice->one_dollar_rate;
         $invoice->include_rut = $request->has('include_rut') ? true : false;
         $invoice->assign_anii = $request->has('assign_anii') ? true : false;
         $invoice->personal_spending = $request->has('personal_spending') ? true : false;
