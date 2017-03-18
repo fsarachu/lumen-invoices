@@ -19,7 +19,6 @@ class CreateCurrenciesTable extends Migration
             $table->string('iso_2');
             $table->string('iso_3');
             $table->string('symbol');
-            $table->decimal('last_one_dollar_rate')->nullable()->default(null);
             $table->timestamps();
         });
     }
