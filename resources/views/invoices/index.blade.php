@@ -10,7 +10,7 @@
             </div>
 
             <div class="column">
-                <table class="ui unstackable selectable celled table">
+                <table class="ui unstackable celled table">
                     <thead>
                     <tr>
                         <th>Id</th>
@@ -22,7 +22,7 @@
                     <tbody>
                     @foreach($invoices as $invoice)
                         <tr>
-                            <td>{{ $invoice->id }}</td>
+                            <td class="selectable"><a href="/invoices/{{ $invoice->id }}">{{ $invoice->id }}</a></td>
                             <td>{{ $invoice->date }}</td>
                             <td class="right aligned">{{ $invoice->currency_id }}</td>
                             <td class="right aligned">{{ $invoice->amount_in_original_currency }}</td>
