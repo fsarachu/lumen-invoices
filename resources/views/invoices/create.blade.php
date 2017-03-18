@@ -95,12 +95,13 @@
             <div class="three fields">
                 <div class="field">
                     <label for="amount_in_original_currency">Importe en moneda de origen</label>
-                    <input id="amount_in_original_currency" name="amount_in_original_currency" type="text" pattern="\d*"
-                           placeholder="0.00">
+                    <input id="amount_in_original_currency" name="amount_in_original_currency" type="text"
+                           pattern="\d+(\.\d+)?" placeholder="0.00">
                 </div>
                 <div class="field">
                     <label for="one_dollar_rate">Cotización a dólares</label>
-                    <input id="one_dollar_rate" name="one_dollar_rate" type="text" pattern="\d*" placeholder="0.00">
+                    <input id="one_dollar_rate" name="one_dollar_rate" type="text" pattern="\d+(\.\d+)?"
+                           placeholder="0.00">
                 </div>
                 <div class="field">
                     <label for="amount_in_dollars">Importe en dólares</label>
