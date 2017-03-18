@@ -6,6 +6,6 @@ class InvoiceController extends Controller
 {
     public function create()
     {
-        return view('invoice.create');
+        return view('invoices.create');
     }
 }
