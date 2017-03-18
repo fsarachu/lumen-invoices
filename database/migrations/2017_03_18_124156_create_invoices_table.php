@@ -29,9 +29,9 @@ class CreateInvoicesTable extends Migration
             $table->decimal('amount_in_dollars');
             $table->decimal('actual_paid_amount');
             $table->string('image_url');
-            $table->boolean('include_rut');
-            $table->boolean('assign_anii');
-            $table->boolean('personal_spending');
+            $table->boolean('include_rut')->default(false);
+            $table->boolean('assign_anii')->default(false);
+            $table->boolean('personal_spending')->default(false);
             $table->timestamps();
         });
     }
