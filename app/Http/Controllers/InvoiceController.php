@@ -37,6 +37,18 @@ class InvoiceController extends Controller
 
     public function store(Request $request)
     {
+
+        $this->validate($request, [
+            'date' => 'required|date_format:"Y-m-d"',
+            'country' => 'exists:countries,id',
+            'category' => 'exists:categories,id',
+            'payment_method' => 'exists:payment_methods,id',
+            'currency' => 'exists:currencies,id',
+            'amount_in_original_currency' => 'required|numeric',
+            'one_dollar_rate' => 'required|numeric|min:0.01',
+            'image' => 'image'
+        ]);
+
         $invoice = new Invoice;
 
         $invoice->date = $request->input('date');
