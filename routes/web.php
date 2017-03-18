@@ -15,15 +15,9 @@ $app->get('/', function () use ($app) {
     return view('hello');
 });
 
-$app->get('/invoices/new', [
-    'as' => 'new.invoice',
-    'uses' => 'InvoiceController@create'
-]);
+$app->get('/invoices/new', 'InvoiceController@create');
 
-$app->post('/invoices/new', [
-    'as' => 'new.invoice',
-    'uses' => 'InvoiceController@store'
-]);
+$app->post('/invoices/new', 'InvoiceController@store');
 
 $app->get('/currencies', function () {
     return DB::table('currencies')->get();
