@@ -133,8 +133,8 @@
                 </div>
             </div>
             <div class="field">
-                <label for="picture">Imagen</label>
-                <input id="picture" name="picture" type="file">
+                <label for="image">Imagen</label>
+                <input id="image" name="image" type="file">
             </div>
             <div class="grouped fields">
                 <div class="field">
