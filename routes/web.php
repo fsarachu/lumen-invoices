@@ -17,6 +17,8 @@ $app->get('/', function () use ($app) {
 
 $app->get('/invoices', 'InvoiceController@index');
 
+$app->get('/invoices/{id:\d+}', 'InvoiceController@show');
+
 $app->get('/invoices/new', 'InvoiceController@create');
 
 $app->post('/invoices/new', 'InvoiceController@store');
