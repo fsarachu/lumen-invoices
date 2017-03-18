@@ -19,3 +19,7 @@ $app->get('invoices/new', [
     'as' => 'new.invoice',
     'uses' => 'InvoiceController@create'
 ]);
+
+$app->get('/currencies', function () {
+    return DB::table('currencies')->get();
+});
