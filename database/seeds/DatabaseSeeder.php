@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call('CurrenciesTableSeeder');
         $this->call('CountriesTableSeeder');
+        $this->call('PaymentMethodsTableSeeder');
     }
 }
