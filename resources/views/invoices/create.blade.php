@@ -68,14 +68,9 @@
                         <div class="default text">Seleccionar método</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item" data-value="1">Efectivo (Moneda Local),</div>
-                            <div class="item" data-value="2">Efectivo (U$S),</div>
-                            <div class="item" data-value="3">Tarjeta de crédito MD,</div>
-                            <div class="item" data-value="4">Tarjeta de crédito MD LUPS,</div>
-                            <div class="item" data-value="5">Tarjeta de débito ITAU</div>
-                            <div class="item" data-value="6">Banco BROU</div>
-                            <div class="item" data-value="7">Banco ITAU</div>
-                            <div class="item" data-value="8">Paypal</div>
+                            @foreach($payment_methods as $payment_method)
+                                <div class="item" data-value="{{$payment_method->id}}">{{$payment_method->name}}</div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
