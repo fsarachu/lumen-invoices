@@ -18,6 +18,13 @@ class InvoiceController extends Controller
         return view('invoices.index', compact('invoices'));
     }
 
+    public function show($id)
+    {
+        $invoice = Invoice::findOrFail($id);
+
+        return view('invoices.show', compact('invoice'));
+    }
+
     public function create()
     {
         $categories = Category::orderBy('name')->get();
