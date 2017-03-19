@@ -14,7 +14,7 @@ class InvoiceController extends Controller
 {
     public function index()
     {
-        $invoices = Invoice::with('currency')->orderBy('created_at', 'desc')->get();
+        $invoices = Invoice::with('category', 'currency')->orderBy('created_at', 'desc')->get();
 
         return view('invoices.index', compact('invoices'));
     }
@@ -42,10 +42,10 @@ class InvoiceController extends Controller
 
         $this->validate($request, [
             'date' => 'required|date_format:"Y-m-d"',
-            'country' => 'exists:countries,id',
-            'category' => 'exists:categories,id',
-            'payment_method' => 'exists:payment_methods,id',
-            'currency' => 'exists:currencies,id',
+            'country' => 'required|exists:countries,id',
+            'category' => 'required|exists:categories,id',
+            'payment_method' => 'required|exists:payment_methods,id',
+            'currency' => 'required|exists:currencies,id',
             'amount_in_original_currency' => 'required|numeric',
             'one_dollar_rate' => 'required|numeric|min:0.01',
             'image' => 'image'
