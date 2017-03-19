@@ -18,6 +18,7 @@
                         <th class="mobile hidden">Viaje</th>
                         <th class="mobile hidden">Empresa</th>
                         <th>Moneda</th>
+                        <th class="tablet or lower hidden">Método de Pago</th>
                         <th class="right aligned">Monto</th>
                     </tr>
                     </thead>
@@ -40,6 +41,9 @@
                                 <i class="{{$invoice->currency->iso_2}} flag"></i>
                                 <span class="mobile only">{{ $invoice->currency->iso_3 }}</span>
                                 <span class="mobile hidden">{{ $invoice->currency->name }}</span>
+                            </td>
+                            <td class="tablet or lower hidden">
+                                {{ $invoice->payment_method->name }}
                             </td>
                             <td class="right aligned">
                                 {{ $invoice->currency->symbol }} {{ $invoice->amount_in_original_currency }}
