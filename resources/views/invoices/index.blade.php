@@ -20,6 +20,7 @@
                         <th>Moneda</th>
                         <th class="tablet or lower hidden">Método de Pago</th>
                         <th class="right aligned">Monto origen</th>
+                        <th class="right aligned tablet or lower hidden">Monto en dólares</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -47,6 +48,9 @@
                             </td>
                             <td class="right aligned">
                                 {{ $invoice->currency->symbol }} {{ $invoice->amount_in_original_currency }}
+                            </td>
+                            <td class="right aligned tablet or lower hidden">
+                                $ {{ $invoice->amount_in_dollars }}
                             </td>
                         </tr>
                     @endforeach
