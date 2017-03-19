@@ -20,7 +20,7 @@
                 </div>
                 <div class="field">
                     <label>País</label>
-                    <div class="ui dropdown search selection">
+                    <div id="country-dropdown" class="ui dropdown search selection">
                         <input type="hidden" name="country">
                         <div class="default text">Seleccionar País</div>
                         <i class="dropdown icon"></i>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="field">
                     <label>Moneda</label>
-                    <div class="ui dropdown search selection">
+                    <div id="currency-dropdown" class="ui dropdown search selection">
                         <input type="hidden" name="currency">
                         <div class="default text">Seleccionar moneda</div>
                         <i class="dropdown icon"></i>
@@ -96,7 +96,7 @@
                 <div class="field">
                     <label for="amount_in_original_currency">Importe en moneda de origen</label>
                     <input id="amount_in_original_currency" name="amount_in_original_currency" type="number"
-                           placeholder="0.00" value="1.30" step="0.01" lang="es">
+                           placeholder="0.00" value="0.0" step="0.01" lang="es">
                 </div>
                 <div class="field">
                     <label for="one_dollar_rate">Cotización a dólares</label>
@@ -135,4 +135,11 @@
             <input class="ui secondary submit large fluid button" value="Cargar" type="submit">
         </form>
     </div>
+
+    @if($lastInvoice)
+        <script>
+            var lastInvoice = {!! json_encode($lastInvoice) !!};
+            console.log(lastInvoice);
+        </script>
+    @endif
 @endsection
