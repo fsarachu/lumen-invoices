@@ -14,7 +14,7 @@ class InvoiceController extends Controller
 {
     public function index()
     {
-        $invoices = Invoice::with('category', 'country', 'currency')->orderBy('created_at', 'desc')->get();
+        $invoices = Invoice::with('category', 'country', 'currency', 'payment_method')->orderBy('created_at', 'desc')->get();
 
         return view('invoices.index', compact('invoices'));
     }
