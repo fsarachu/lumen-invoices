@@ -13,6 +13,11 @@ class Invoice extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
     public function currency()
     {
         return $this->belongsTo(Currency::class);
