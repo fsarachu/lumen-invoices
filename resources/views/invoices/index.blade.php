@@ -10,28 +10,40 @@
             </div>
 
             <div class="column">
-                <table class="ui unstackable single line basic table">
+                <table class="ui unstackable selectable single line basic table">
                     <thead>
                     <tr>
                         <th>Id</th>
                         <th>Fecha</th>
+                        <th class="mobile hidden">Viaje</th>
+                        <th class="mobile hidden">Empresa</th>
                         <th>Moneda</th>
                         <th class="right aligned">Monto</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($invoices as $invoice)
-                        <tr>
-                            <td class="selectable"><a href="/invoices/{{ $invoice->id }}">{{ $invoice->id }}</a></td>
-                            <td>{{ Carbon\Carbon::parse($invoice->date)->format('d/m/y') }}</td>
+                        <tr data-href="/invoices/{{ $invoice->id }}">
                             <td>
-                                @if($invoice->has('currency'))
-                                    <i class="{{$invoice->currency->iso_2}} flag"></i> {{ $invoice->currency->iso_3 }}
-                                @else
-                                    -
-                                @endif
+                                {{ $invoice->id }}
                             </td>
-                            <td class="right aligned">{{$invoice->currency->symbol}} {{ $invoice->amount_in_original_currency }}</td>
+                            <td>
+                                {{ Carbon\Carbon::parse($invoice->date)->format('d/m/y') }}
+                            </td>
+                            <td class="mobile hidden">
+                                {{ $invoice->trip }}
+                            </td>
+                            <td class="mobile hidden">
+                                {{ $invoice->business_name }}
+                            </td>
+                            <td>
+                                <i class="{{$invoice->currency->iso_2}} flag"></i>
+                                <span class="mobile only">{{ $invoice->currency->iso_3 }}</span>
+                                <span class="mobile hidden">{{ $invoice->currency->name }}</span>
+                            </td>
+                            <td class="right aligned">
+                                {{ $invoice->currency->symbol }} {{ $invoice->amount_in_original_currency }}
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>
