@@ -19,7 +19,7 @@
                         <th class="mobile hidden">Empresa</th>
                         <th>Moneda</th>
                         <th class="tablet or lower hidden">Método de Pago</th>
-                        <th class="right aligned">Monto</th>
+                        <th class="right aligned">Monto origen</th>
                     </tr>
                     </thead>
                     <tbody>
