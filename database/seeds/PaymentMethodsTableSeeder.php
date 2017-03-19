@@ -44,5 +44,9 @@ class PaymentMethodsTableSeeder extends Seeder
             'name' => 'Paypal'
         ]);
 
+        DB::table('payment_methods')->insert([
+            'name' => 'Otro'
+        ]);
+
     }
 }
