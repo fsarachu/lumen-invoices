@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div id="sidebar-menu" class="ui left inverted borderless vertical menu sidebar">
+<div id="sidebar-menu" class="ui left borderless vertical menu sidebar">
     <div class="header item">Comprobantes</div>
     <a class="item" href="/invoices/new">Cargar</a>
     <a class="item" href="/invoices">Listar</a>
