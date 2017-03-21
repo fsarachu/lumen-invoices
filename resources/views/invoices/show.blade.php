@@ -13,7 +13,6 @@
                 </div>
                 <div class="two columns wide relaxed horizontally divided stackable row">
                     <div class="column">
-                        {{--<h4 class="ui horizontal header divider">Datos</h4>--}}
                         <div class="ui divided list">
                             <div class="item">
                                 <div class="left floated content">
@@ -162,7 +161,6 @@
                         </div>
                     </div>
                     <div class="column">
-                        {{--<h4 class="ui horizontal header divider">Imagen</h4>--}}
                         <div class="ui fluid card">
                             <div class="ui fluid image">
                                 @if($invoice->image_url)
@@ -185,5 +183,4 @@
             </div>
         </div>
     </div>
-    {{--<pre>{{ json_encode($invoice, JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES) }} </pre>--}}
 @endsection
