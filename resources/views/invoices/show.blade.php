@@ -174,7 +174,7 @@
                             </div>
                             <div class="content">
                                 <div class="description">
-                                    <p><strong>Descripción:</strong> {{ $invoice->description }}</p>
+                                    <p>{{ $invoice->description }}</p>
                                 </div>
                             </div>
                         </div>
