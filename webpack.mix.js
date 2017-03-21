@@ -30,7 +30,6 @@ mix.webpackConfig({
 mix.js('resources/assets/js/app.js', 'public/js')
     .styles([
         'resources/assets/semantic/dist/semantic.css',
-        'node_modules/semantic-ui-calendar/dist/calendar.css',
-        'resources/assets/css/custom.css'
+        'node_modules/semantic-ui-calendar/dist/calendar.css'
     ], 'public/css/app.css')
     .copy('node_modules/semantic-ui/src/themes/default/assets/fonts', 'public/fonts');

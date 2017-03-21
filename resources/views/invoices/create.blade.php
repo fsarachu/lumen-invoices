@@ -3,8 +3,8 @@
 @section('title', 'Cargar Comprobante')
 
 @section('content')
-    <div class="ui container">
-        <form class="ui invoice form fluid basic padded segment" method="post" action="/invoices"
+    <div class="ui text container">
+        <form class="ui form" method="post" action="/invoices"
               enctype="multipart/form-data" novalidate>
             <h3 class="ui horizontal divider header">Cargar Comprobante</h3>
             <div class="three fields">
