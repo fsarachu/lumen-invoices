@@ -1,3 +1,16 @@
 /*******************************
          Site Overrides
 *******************************/
+#sidebar-toggle {
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.fixed.menu .brand.item {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
