@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.ui.inverted.menu {
+  box-shadow: @boxShadow;
+}
+
 .fixed.menu .brand.item {
   display: block;
   margin: 0;
